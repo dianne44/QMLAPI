@@ -17,7 +17,11 @@ def quantum_circuit(inputs, weights):
 
 # Convert the quantum circuit into a QNode (This step is necessary)
 n_qubits = 10  # Set the number of qubits for your model (or use your preferred value)
-quantum_qnode = qml.QNode(quantum_circuit, interface="torch", wires=range(n_qubits))
+
+# Specify the device where quantum operations will run
+device = qml.device("default.qubit", wires=n_qubits)  # Using the default quantum device
+
+quantum_qnode = qml.QNode(quantum_circuit, device, interface="torch", wires=range(n_qubits))
 
 # Define the quantum neural network model
 class QuantumFraudDetector(torch.nn.Module):
