@@ -1,23 +1,15 @@
 torch==2.2.1
-pandas==2.2.0 # Or the latest stable version you want to use
-numpy==1.26.0 # Or the latest stable version you want to use
+pandas==2.2.0  # Keep this version or the latest stable one (ensure consistency)
+numpy==1.26.0  # Make sure numpy is compatible with other libraries
 streamlit==1.42.2
-pennylane>=0.34.0 
+pennylane>=0.34.0  # Use the latest version of PennyLane that is compatible
 xgboost==1.7.4
 shap==0.41.0
-setuptools>=68.0.0
-pandas>=2.2.0 --prefer-binary
-scikit-learn>=1.3.0 
-pandas==1.5.3
+setuptools>=68.0.0  # To avoid older setuptools issues
+scikit-learn>=1.3.0
 datasets==2.10.1
 imbalanced-learn==0.9.1
 matplotlib==3.7.1
 seaborn==0.11.2
-setuptools==65.0.0
-
-
-rich>=10.14.0
-
-
+rich>=10.14.0  # Updated for better compatibility
 wheel>=0.40.0
-
