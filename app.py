@@ -25,17 +25,19 @@ def quantum_circuit(inputs, weights):
     qml.StronglyEntanglingLayers(weights, wires=range(n_qubits))
     return qml.expval(qml.PauliZ(0))
 
-# Load dataset (for feature scaling & preprocessing)
-@st.cache
+# Use st.cache_data for caching data like datasets
+@st.cache_data
 def load_data():
     ds = load_dataset("thomask1018/credit_card_fraud")
     data = ds['train'].to_pandas()
     return data
 
-# Model loading
+# Use st.cache_resource for caching models
+@st.cache_resource
 def load_model():
-    # Your model loading code here
-    pass
+    # Here, load your trained model
+    model = QuantumFraudDetector(n_qubits=4, n_layers=2)  # Example, load your actual model here
+    return model
 
 def predict_fraud(model, input_data):
     with torch.no_grad():
