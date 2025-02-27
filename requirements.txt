@@ -1,5 +1,6 @@
 torch==2.2.1
-pandas>=2.2.0
+pandas==2.2.0 # Or the latest stable version you want to use
+numpy==1.26.0 # Or the latest stable version you want to use
 streamlit==1.42.2
 pennylane>=0.34.0 
 xgboost==1.7.4
@@ -14,7 +15,7 @@ matplotlib==3.7.1
 seaborn==0.11.2
 setuptools==65.0.0
 
-numpy>=1.26.0
+
 rich>=10.14.0
 
 
