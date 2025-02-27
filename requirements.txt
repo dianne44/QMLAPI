@@ -1,7 +1,7 @@
 torch==2.2.1
-pennylane==0.22.0
-streamlit==1.42.2
 
+streamlit==1.42.2
+pennylane>=0.34.0 
 xgboost==1.7.4
 shap==0.41.0
 
