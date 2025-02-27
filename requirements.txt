@@ -1,6 +1,6 @@
-streamlit==1.14.0
-torch==2.1.0  # Use the appropriate version for your environment
+torch==2.1.0
 pennylane==0.22.0
+streamlit==1.14.0
 xgboost==1.7.4
 shap==0.41.0
 scikit-learn==1.1.2
