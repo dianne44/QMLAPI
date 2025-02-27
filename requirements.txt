@@ -1,0 +1,11 @@
+streamlit==1.14.0
+torch==2.1.0  # Use the appropriate version for your environment
+pennylane==0.22.0
+xgboost==1.7.4
+shap==0.41.0
+scikit-learn==1.1.2
+pandas==1.5.3
+datasets==2.10.1
+imbalanced-learn==0.9.1
+matplotlib==3.7.1
+seaborn==0.11.2
